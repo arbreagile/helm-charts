@@ -1,3 +1,14 @@
 apiVersion: v1
-entries: {}
-generated: "2025-03-20T15:11:37.835638469+01:00"
+entries:
+  cert-manager-webhook-bunny:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-03-21T09:56:33.907158041+01:00"
+    description: A Helm chart for deploying the Bunny DNS webhook for cert-manager.
+    digest: e56a2bb4cd0ce640230a9829cb33bde3620317087944ea7f8ebec3002a94de30
+    name: cert-manager-webhook-bunny
+    type: application
+    urls:
+    - https://github.com/arbreagile/helm-charts/releases/download/cert-manager-webhook-bunny-0.1.0/cert-manager-webhook-bunny-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-03-21T09:56:33.907164232+01:00"
