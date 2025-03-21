@@ -18,16 +18,16 @@ helm upgrade --install cert-manager-webhook-bunny .
 
 Configuration parameters.
 
-| Name                             | Description                                               | Value                               |
-| -------------------------------- | --------------------------------------------------------- | ------------------------------------|
-| `groupName`                      | Name under which the webhook will be available            | `acme.arbreagile.eu`                |
-| `certManager.namespace`          | Namespace under which cert-manager is installed           | `cert-manager`                      |
-| `certManager.serviceAccountName` | Name of the cert-manager service account                  | `cert-manager`                      |
-| `pki.caDuration`                 | Webhook ca duration                                       | `43800h`                            |
-| `pki.servingCertificateDuration` | Webhook certificate duration                              | `8760h`                             |
-| `secret.apiKey`                  | Default bunny api key (optional)                          | `""`                                |
-| `secret.name`                    | Secret name for the default bunny credentials             | `cert-manager-webhook-bunny-secret` |
-| `secret.externalSecretName`      | Existing secret name for the default bunny credentials    | `""`                                |
+| Name                             | Description                                            | Value                |
+| -------------------------------- | ------------------------------------------------------ | -------------------- |
+| `groupName`                      | Name under which the webhook will be available         | `acme.arbreagile.eu` |
+| `certManager.namespace`          | Namespace under which cert-manager is installed        | `cert-manager`       |
+| `certManager.serviceAccountName` | Name of the cert-manager service account               | `cert-manager`       |
+| `pki.caDuration`                 | Webhook ca duration                                    | `43800h`             |
+| `pki.servingCertificateDuration` | Webhook certificate duration                           | `8760h`              |
+| `secret.apiKey`                  | Default bunny api key (optional)                       | `""`                 |
+| `secret.name`                    | Secret name for the default bunny credentials          | `bunny-secret`       |
+| `secret.externalSecretName`      | Existing secret name for the default bunny credentials | `""`                 |
 
 
 ### Common configuration

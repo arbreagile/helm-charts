@@ -23,7 +23,7 @@ pki:
 ## @param secret.name Secret name for the default bunny credentials
 secret:
   api-key: ""
-  name: cert-manager-webhook-bunny
+  name: bunny-secret
   externalSecretName: ""
 
 ## @section Common configuration
@@ -45,7 +45,7 @@ replicaCount: 1
 ## @param image.imagePullSecrets Image pull secrets
 ## @param image.tag Tag for the webhook image, defaults to AppVersion
 image:
-  repository: registry.github.com/arbreagile/cert-manager-webhook-bunny
+  repository: arbreagile/cert-manager-webhook-bunny
   pullPolicy: IfNotPresent
   imagePullSecrets: []
   tag: ""
